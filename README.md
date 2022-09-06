@@ -1,6 +1,6 @@
 # Adaptive body min width function
 This is the function which adds min-width functionality to body in Firefox and Safari.
-For more info go to the
+For more info go to the https://habr.com/ru/post/686748/ (Ru)
 
 ## How to use
 Copy the code to project and call the ```adaptiveSizePageScaleInit(300)``` function and pass as an argument the width of the browser window at which it should start (320 by default).
@@ -13,7 +13,7 @@ with the desired option from the list: (  "other", "msEdge", "chrEdge", "opera",
 # Адаптивная функция body min-width 
 
 Это функция, которая добавляет функциональность min-width к body в Firefox и Safari.
-Для получения дополнительной информации перейдите на
+Для получения дополнительной информации перейдите на https://habr.com/ru/post/686748/
 
 ## Как использовать
 Скопируйте код к себе в проект и вызовите функцию  ```adaptiveSizePageScaleInit(300)``` в качестве аргумента передайте ширину окна браузера, при котором она функция должна запускаться (по умолчанию 320).
