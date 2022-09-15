@@ -1,16 +1,18 @@
-function adaptiveSizePageScaleInit(startWidth = 320) {
+function adaptiveSizePageScaleInit(definedStartWidth) {
   const page = document.documentElement;
   let clientWidth = page.clientWidth;
   let pageComputedWidth;
   let resizeCoef;
   let resizeCoefPercents;
-
-  window.addEventListener("resize", scalePage);
-  scalePage();
-
-  function scalePage() {
+  let startWidth = definedStartWidth;
+  if (!(startWidth / 1)) {
+    let bodyMinWidthStr = getComputedStyle(document.body).minWidth;
+    let bodyMinWidthNumber = Number(bodyMinWidthStr.replace(/[^0-9]/g, ""));
+    startWidth = bodyMinWidthNumber;
+  }
+  function scalePage(startWidth) {
     clientWidth = page.clientWidth;
-    if (clientWidth <= startWidth) {
+    if (startWidth / 1 && clientWidth <= startWidth) {
       pageComputedWidth = parseInt(getComputedStyle(page).width);
       resizeCoef = clientWidth / pageComputedWidth;
       resizeCoefPercents = 100 * resizeCoef;
@@ -25,8 +27,11 @@ function adaptiveSizePageScaleInit(startWidth = 320) {
       page.style.height = ``;
     }
   }
+  window.addEventListener("resize", function () {
+    scalePage(startWidth);
+  });
+  scalePage(startWidth);
 }
-
 function startOnSpecificBrowserInit() {
   let userAgent = window.navigator.userAgent.toLowerCase();
   let browser = "other";
