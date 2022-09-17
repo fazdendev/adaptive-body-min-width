@@ -7,7 +7,9 @@ Full article at https://habr.com/en/post/686748/ (ru)
 
 ### Selecting the desired scaling option 
 Select a scaling implementation option.
+
 In both cases, the function is run when the screen width becomes less than or equal to the argument passed to it.
+
 In the transform-function.js file, scaling is done by changing the body - transform: scale() and width properties. The advantage of this method is that the function works on both PC and mobile devices.
 In the meta-width-function.js file, the scaling is done by fixation the viewport-width in meta tag. The advantage of this method is that all changes are natural. Because of this, the function works more reliably and is less invasive. The disadvantage of such good quality is that it only works in mobile browsers.
 
@@ -25,7 +27,9 @@ Condition in which to change code ```if (browser == "REQUIREDBROWSER" || browser
 
 ### Выбор варианта масштабирования
 Выберите вариант реализации масштабирования.
+
 В обоих вариантах, функция запускается, когда ширина экрана становится меньше или равна переданному в нее значению.
+
 В файле transform-function.js масштабирование происходит за счет измения свойств body - transform: scale() и width. Преимуществом данного метода является то, что функция работает как и на ПК, так и на мобильных устройствах.
 В файле meta-width-function.js масштабирование происходит за счет измения мета-тега viewport путем добавления к нему фиксированной ширины взятой из min-width. Преимуществом данного метода является то, что все изменения происходят силами браузера. Из-за этого функция работает надежнее и менее инвазивно. Недостаток такого способа в том, что он работает только в мобильных браузерах.
 
