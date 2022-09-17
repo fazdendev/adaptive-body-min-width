@@ -11,7 +11,7 @@ In both cases, the function is run when the screen width becomes less than or eq
 
 In the transform-function.js file, scaling is done by changing the body - transform: scale() and width properties. The advantage of this method is that the function works on both PC and mobile devices.
 
-In the meta-width-function.js file, the scaling is done by fixation the viewport-width in meta tag. The advantage of this method is that all changes are natural. Because of this, the function works more reliably and is less invasive. The disadvantage of such good quality is that it only works in mobile browsers.
+In the meta-width-function.js file, the scaling is done by fixation width in the viewport meta tag. The advantage of this method is that all changes are natural. Because of this, the function works more reliably and is less invasive. The disadvantage of such good quality is that it only works in mobile browsers.
 
 ### Function setting
 Open the selected file and copy the code to your project. Call the ```adaptiveSizePageScaleInit(300)``` function and pass the viewport width when it shold start working as an argument, if no argument is given, the function will take the value from the min-width body.
