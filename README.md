@@ -16,7 +16,7 @@ In the meta-width-function.js file, the scaling is done by fixation width in the
 ### Function setting
 Open the selected file and copy the code to your project. Call the ```adaptiveSizePageScaleInit(300)``` function.
 Pass the viewport width when it shold start working as an argument, if no argument is given, the function will take the value from the min-width body.
-If you want the function to run only in certain browsers, call the ```startOnSpecificBrowserInit()``` function and load the document reference "REQUIREDBROWSER" from the conditions required to apply from the list: ("other", "msEdge", " chrEdge", "opera" , "chrome", "ie", "firefox", "safari")
+If you want the function to run only in certain browsers, call the ```startOnSpecificBrowserInit()``` function and load the document reference "REQUIREDBROWSER" from the conditions required to apply from the list: ("other", "msEdge", " chrEdge", "opera" , "chrome", "ie", "firefox", "safari").
 Condition in which to change code ```if (browser == "REQUIREDBROWSER" || browser == "REQUIREDBROWSER") {adaptiveSizePageScaleInit()```
 
 # Адаптивная функция body min-width 
@@ -35,7 +35,7 @@ Condition in which to change code ```if (browser == "REQUIREDBROWSER" || browser
 В файле meta-width-function.js масштабирование происходит за счет измения мета-тега viewport путем добавления к нему фиксированной ширины взятой из min-width. Преимуществом данного метода является то, что все изменения происходят силами браузера. Из-за этого функция работает надежнее и менее инвазивно. Недостаток такого способа в том, что он работает только в мобильных браузерах.
 
 ### Настройка функции
-Откройте выбранный файл и скопируйте код к себе в проект. Вызовите функцию  ```adaptiveSizePageScaleInit(300)``` 
+Откройте выбранный файл и скопируйте код к себе в проект. Вызовите функцию  ```adaptiveSizePageScaleInit(300)```.
 В качестве аргумента передайте в нее ширину окна браузера, при котором она должна запускаться, если аргумент не указан, функция возьмет значение из min-width body.
-Если вы хотите чтобы функция запускалась только в определенных браузерах вызовите функцию ```startOnSpecificBrowserInit()``` и замените строку "НЕОБХОДИМЫЙБРАУЗЕР" из условия нужным вариантом из списка: (  "other", "msEdge",  "chrEdge", "opera", "сhrome", "ie", "firefox", "safari")
+Если вы хотите чтобы функция запускалась только в определенных браузерах вызовите функцию ```startOnSpecificBrowserInit()``` и замените строку "НЕОБХОДИМЫЙБРАУЗЕР" из условия нужным вариантом из списка: (  "other", "msEdge",  "chrEdge", "opera", "сhrome", "ie", "firefox", "safari").
 Условие, в котором нужно менять код ```if (browser == "НЕОБХОДИМЫЙБРАУЗЕР" || browser == "НЕОБХОДИМЫЙБРАУЗЕР") {adaptiveSizePageScaleInit()``` 
