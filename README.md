@@ -1,12 +1,12 @@
 # Responsive function body min-width
 
-This is a feature that adds a min-width feature to the body in Firefox and Safari.
+This is a function that adds a min-width feature to the body in Firefox and Safari.
 Full article at https://habr.com/en/post/686748/ (ru)
 
 ## How to use
 
 ### Select a scaling implementation option.
-In both cases, the function is run when the screen width becomes less than or equal to the value passed to it.
+In both cases, the function is run only when the screen width becomes less than or equal to the argument passed to it.
 
 In the transform-function.js file, scaling occurs by changing the body - transform: scale() and width properties. The advantage of this method is that the function works on both PC and mobile devices.
 
